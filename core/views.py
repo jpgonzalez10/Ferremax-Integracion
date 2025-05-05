@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.forms import AuthenticationForm
 
 # Create your views here.
 def index(request):
@@ -27,3 +28,7 @@ def thankyou(request):
 
 def base(request):
     return render(request, 'core/base.html')
+
+def login(request):
+    form = AuthenticationForm()
+    return render(request, 'core/registration/login.html', {'form':form})

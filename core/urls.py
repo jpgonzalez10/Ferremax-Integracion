@@ -12,4 +12,5 @@ urlpatterns = [
     path('shop_single/',shop_single,name="shop_single"),
     path('shop/',shop,name="shop"),
     path('thankyou/',thankyou,name="thankyou"),
+    path('login/',login, name="login"),
 ]
